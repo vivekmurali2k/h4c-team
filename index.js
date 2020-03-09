@@ -43,21 +43,41 @@ app.post('/sign_up', function(req,res){
     var reg4 = req.body.reg4;
     var name5 = req.body.name5;
     var reg5 = req.body.reg5;
+    var room1 = req.body.room1;
+    var room2 = req.body.room2;
+    var room3 = req.body.room3;
+    var room4 = req.body.room4;
+    var room5 = req.body.room5;
+    var add1 = req.body.add1;
+    var add2 = req.body.add2;
+    var add3 = req.body.add3;
+    var add4 = req.body.add4;
+    var add5 = req.body.add5;
 
 	var data = { 
         "Team name": team,
-        "Leader name": name1, 
+        "Leader name": name1,
         "Leader regno":reg1,
         "Leader email":email, 
         "Leader phone":phone,
+        "Leader hostel":add1,
+        "Leader room":room1,
         "Member 2": name2,
         "Member 2 regno":reg2,
+        "Member 2 hostel":add2,
+        "Member 2 room":room2,
         "Member 3": name3,
         "Member 3 regno":reg3,
+        "Member 3 hostel":add3,
+        "Member 3 room":room3,
         "Member 4": name4,
         "Member 4 regno":reg4,
+        "Member 4 hostel":add4,
+        "Member 4 room":room4,
         "Member 5": name5,
         "Member 5 regno":reg5,
+        "Member 5 hostel":add5,
+        "Member 5 room":room5,
 
     }
     
